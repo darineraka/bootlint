@@ -2,6 +2,8 @@
 [![NPM version](https://badge.fury.io/js/bootlint.svg)](http://badge.fury.io/js/bootlint)
 [![Build Status](https://img.shields.io/travis/twbs/bootlint/master.svg)](https://travis-ci.org/twbs/bootlint)
 [![Coverage Status](https://img.shields.io/coveralls/twbs/bootlint.svg?branch=master)](https://coveralls.io/r/twbs/bootlint)
+![Development Status :: 5 - Production/Stable](https://img.shields.io/badge/maturity-stable-green.svg "Development Status :: 5 - Production/Stable")
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg "MIT License")](https://github.com/twbs/bootlint/blob/master/LICENSE)
 [![Dependency Status](https://david-dm.org/twbs/bootlint.svg)](https://david-dm.org/twbs/bootlint)
 [![devDependency Status](https://david-dm.org/twbs/bootlint/dev-status.svg)](https://david-dm.org/twbs/bootlint#info=devDependencies)
 
@@ -19,6 +21,10 @@ Bootlint assumes that you are using Bootstrap's default class names in your webp
 ### Via Grunt
 
 To use Bootlint with [Grunt](http://gruntjs.com/), use the official Grunt plugin: [grunt-bootlint](https://github.com/twbs/grunt-bootlint)
+
+### Via Gulp
+
+If you want to use Bootlint with [Gulp](http://gulpjs.com), there is an *unofficial* Gulp plugin: [gulp-bootlint](https://github.com/tschortsch/gulp-bootlint)
 
 ### On the command line
 Install the module with: `npm install -g bootlint`
@@ -172,6 +178,11 @@ _Also, please don't edit files in the "dist" subdirectory as they are generated 
 ## Release History
 See the [GitHub Releases page](https://github.com/twbs/bootlint/releases) for detailed changelogs.
 * (next release) - `master`
+* 2015-11-25 - v0.14.2: Fix critical CLI bug introduced in v0.14.0 and add tests to prevent its recurrence. Update current Bootstrap version to v3.3.6.
+* 2015-11-16 - v0.14.1: Forgot to regenerate browser version when tagging v0.14.0
+* 2015-11-16 - v0.14.0: Adds 3 new lint checks.
+* 2015-11-15 - v0.13.0: Removes E036. Adds a few new checks. Bumps dependency versions.
+* 2015-03-16 - v0.12.0: Adds warning if Bootstrap v4 is detected (since Bootlint is currently only compatible with Bootstrap v3). Minor fixes to some existing lint checks.
 * 2015-02-23 - v0.11.0: Adds several new lint checks. Improves stdin handling. Bumps dependency versions.
 * 2015-01-21 - v0.10.0: By default, the in-browser version now `alert()`s when no lint problems are found. Adds validity check for carousel control & indicator targets.
 * 2015-01-07 - v0.9.2: Fixes a problem when using the CLI via node's `child_process.exec`.
