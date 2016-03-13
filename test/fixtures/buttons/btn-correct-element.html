@@ -10,7 +10,6 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <script src="../../lib/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
 
         <link rel="stylesheet" href="../../lib/qunit.css">
         <script src="../../lib/qunit.js"></script>
@@ -18,9 +17,11 @@
         <script src="../generic-qunit.js"></script>
     </head>
     <body>
+        <a class="btn">Button</a>
+        <button type="submit" class="btn">Button</button>
+        <input type="submit" class="btn" />
+        <label class="btn">Button</label>
         <div id="qunit"></div>
-        <ol id="bootlint">
-            <li data-lint="Bootstrap version might be outdated. Latest version is at least 3.3.6 ; saw what appears to be usage of Bootstrap 3.2.0"></li>
-        </ol>
+        <ol id="bootlint"></ol>
     </body>
 </html>

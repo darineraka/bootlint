@@ -17,24 +17,13 @@
         <script src="../generic-qunit.js"></script>
     </head>
     <body>
-        <div class="input-group">
-            <input type="text" class="form-control" />
-            <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Harder!</button>
-                <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li><a href="#">Option 3</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Option 4</a></li>
-                </ul>
-                <button class="btn btn-default" type="button">Work it!</button>
-            </span>
-        </div>
+
+        <input type="button" class="btn btn-default disabled" value="Mash" />
 
         <div id="qunit"></div>
         <ol id="bootlint">
-            <li data-lint="Having multiple `.btn`s inside of a single `.input-group-btn` is not supported"></li>
+          <li data-lint="Using the `.disabled` class on a `<button>` or `<input>` only changes the appearance of the element. It doesn't prevent the user from interacting with the element (for example, clicking on it or focusing it). If you want to truly disable the element, use the `disabled` attribute instead."></li>
         </ol>
     </body>
 </html>
+
